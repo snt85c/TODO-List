@@ -1,0 +1,151 @@
+html,
+body {
+    background-image: url(img/background.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+
+#page {
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: black;
+    color: white;
+    /* text-align: right; */
+}
+
+#whiteShell {
+    object-fit: contain;
+}
+
+#TitleAndNew {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#title {
+    margin: 15px 5px 0px 15px;
+    font-size: 75px;
+    text-align: center;
+    color: rgb(248, 223, 0);
+    font-family: logoFont;
+}
+
+#menuOps {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+#addButton {
+    width: 20px;
+    margin: 5px;
+}
+
+#okButton {
+    margin: 0px 0px 2px 0px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#inputField {
+    margin: 0px 0px 2px 0px;
+    background-color: black;
+    color: white;
+    border: 1px gray solid;
+    border-radius: 5px;
+    border-radius: "5px";
+}
+
+#inputField:focus {
+    outline: none;
+}
+
+#inputField:invalid {
+    box-shadow: 0 0 5px 1px red;
+    transition: 0.5s ease-in-out;
+}
+
+#inputField:valid {
+    box-shadow: 0 0 5px 1px rgb(0, 255, 0);
+    transition: 0.5s ease-in-out;
+}
+
+#hikersContainer {
+    background-color: rgb(187, 154, 7);
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#item {
+    color: rgb(56, 56, 56);
+}
+
+.Head,
+.Extra,
+.Bottom,
+.Shoes {
+    color: red;
+}
+
+#checkboxY,
+#checkboxN,
+#remove,
+#addWardrobe,
+#modify {
+    margin-right: 1px;
+    width: 15px;
+    float: right;
+}
+
+.hiker {
+    border: 1px solid red;
+    padding: 5px;
+    margin: 1px;
+    background-color: rgb(187, 154, 7);
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.hiker:hover {
+    background-color: rgb(94, 93, 93);
+}
+
+.panel {
+    padding: 0 2px;
+    background-color: rgb(231, 220, 165);
+    color: rgb(146, 0, 0);
+    display: block;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(fonts/AliandoRocky.ttf);
+}
